@@ -354,122 +354,141 @@ header a:hover::after {
 }
 
 @media screen and (max-width: 428px) {
-    .thumbnail .item {
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 8px 5px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a{
+        font-size: 12px;
+        text-decoration: none;
+        padding: 4px 6px;
+        margin: 0 3px;
+    }
+    
+    .thumbnail .item{
         width: 120px;
         height: 180px;
     }
-    .carousel .list .item .content {
-        top: 20%; /* Ajustando o posicionamento para cima */
-        width: 90%; /* Reduzindo a largura do conteúdo */
-        max-width: 100%; /* Maximizando a largura no pequeno espaço disponível */
-        padding-right: 10%; /* Ajustando o padding */
+    .carousel .list .item .content{
+        top: 20%;
+        width: 90%;
+        max-width: 100%;
+        padding-right: 10%;
     }
 
     .carousel .list .item .title,
-    .carousel .list .item .topic {
-        font-size: 3.5em; /* Reduzindo o tamanho do título e tópico */
+    .carousel .list .item .topic{
+        font-size: 3.5em;
     }
 
     .carousel .list .item .des{
         font-size: 12px;
     }
 
-    .carousel .list .item .author {
-        font-size: 1.2em; /* Ajustando o tamanho da autoria */
-        letter-spacing: 5px; /* Reduzindo o espaçamento das letras */
+    .carousel .list .item .author{
+        font-size: 1.2em;
+        letter-spacing: 5px;
     }
 
-    .carousel .list .item .buttons {
-        grid-template-columns: repeat(2, 100px); /* Reduzindo a largura dos botões */
-        grid-template-rows: 35px; /* Ajustando a altura dos botões */
+    .carousel .list .item .buttons{
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: 35px;
     }
 
-    .carousel .list .item .buttons button {
-        font-size: 0.9em; /* Reduzindo o tamanho da fonte nos botões */
-        padding: 8px; /* Ajustando o padding dos botões */
+    .carousel .list .item .buttons button{
+        font-size: 0.9em;
+        padding: 8px;
     }
 }
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 393px){
     .carousel .list .item .title,
     .carousel .list .item .topic{
         font-size: 2.2rem;
     }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 390px){
     .thumbnail .item {
         width: 70px;
         height: 130px;
     }
-    .carousel .list .item .content {
-        top: 15%; /* Ajustando o posicionamento para cima */
-        width: 90%; /* Reduzindo a largura do conteúdo */
-        max-width: 100%; /* Maximizando a largura no pequeno espaço disponível */
-        padding-right: 10%; /* Ajustando o padding */
+    .carousel .list .item .content{
+        top: 15%;
+        width: 90%;
+        max-width: 100%;
+        padding-right: 10%;
     }
 
     .carousel .list .item .title,
-    .carousel .list .item .topic {
-        font-size: 3.5em; /* Reduzindo o tamanho do título e tópico */
+    .carousel .list .item .topic{
+        font-size: 3.5em;
     }
 
-    .carousel .list .item .author {
-        font-size: 1.2em; /* Ajustando o tamanho da autoria */
-        letter-spacing: 5px; /* Reduzindo o espaçamento das letras */
+    .carousel .list .item .author{
+        font-size: 1.2em;
+        letter-spacing: 5px;
     }
 
-    .carousel .list .item .buttons {
-        grid-template-columns: repeat(2, 100px); /* Reduzindo a largura dos botões */
-        grid-template-rows: 35px; /* Ajustando a altura dos botões */
+    .carousel .list .item .buttons{
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: 35px;
     }
 
-    .carousel .list .item .buttons button {
-        font-size: 0.9em; /* Reduzindo o tamanho da fonte nos botões */
-        padding: 8px; /* Ajustando o padding dos botões */
+    .carousel .list .item .buttons button{
+        font-size: 0.9em;
+        padding: 8px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px){
     header a{
         font-size: 10px;
     }
-    .thumbnail .item {
+    .thumbnail .item{
         width: 70px;
         height: 130px;
     }
-    .carousel .list .item .content {
-        top: 15%; /* Ajustando o posicionamento para cima */
-        width: 90%; /* Reduzindo a largura do conteúdo */
-        max-width: 100%; /* Maximizando a largura no pequeno espaço disponível */
-        padding-right: 10%; /* Ajustando o padding */
+    .carousel .list .item .content{
+        top: 15%;
+        width: 90%;
+        max-width: 100%;
+        padding-right: 10%;
     }
 
     .carousel .list .item .title,
-    .carousel .list .item .topic {
-        font-size: 2.1em; /* Reduzindo o tamanho do título e tópico */
+    .carousel .list .item .topic{
+        font-size: 2.1em;
     }
     .thumbnail .content .title,
-    .thumbnail .content .description {
+    .thumbnail .content .description{
         display: none;
     }
-    .carousel .list .item .author {
-        font-size: 0.6em; /* Ajustando o tamanho da autoria */
-        letter-spacing: 5px; /* Reduzindo o espaçamento das letras */
+    .carousel .list .item .author{
+        font-size: 0.6em;
+        letter-spacing: 5px;
     }
 
     .carousel .list .item .des{
         font-size: 10px;
     }
 
-    .carousel .list .item .buttons {
-        grid-template-columns: repeat(2, 80px); /* Reduzindo a largura dos botões */
-        grid-template-rows: 35px; /* Ajustando a altura dos botões */
+    .carousel .list .item .buttons{
+        grid-template-columns: repeat(2, 80px);
+        grid-template-rows: 35px;
     }
 
-    .carousel .list .item .buttons button {
-        font-size: 0.9em; /* Reduzindo o tamanho da fonte nos botões */
-        padding: 8px; /* Ajustando o padding dos botões */
+    .carousel .list .item .buttons button{
+        font-size: 0.9em;
+        padding: 8px;
     }
-    .thumbnail .item {
+    .thumbnail .item{
         margin-top: 15px;
         width: 50px;
         height: 110px;
